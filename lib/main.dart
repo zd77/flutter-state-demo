@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_demo_app/tasks.screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'State Demo App',
       initialRoute: 'todo',
-      routes: {},
+      routes: {'todo': (_) => TasksScreen()},
     );
   }
 }
